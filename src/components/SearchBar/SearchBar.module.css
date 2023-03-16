@@ -1,0 +1,21 @@
+.container {
+    max-width: 100vw;
+    height: 100%;
+
+}
+
+.button {
+    background-color: #28c009;
+    color: #fff;
+    width: 80px;
+    height: 2.5em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.input {
+    padding: 8px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+}

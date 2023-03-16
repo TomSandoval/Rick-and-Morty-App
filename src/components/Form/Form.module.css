@@ -1,0 +1,83 @@
+.form {
+    height: 220px;
+    width: 340px;
+    background-color: rgb(15, 102, 69);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.allContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.passDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    margin: 8px;
+}
+
+.input {
+    width: 200px;
+    align-self: center;
+}
+
+.errors {
+    color: rgb(168, 168, 168);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.failed {
+    border: 2px solid rgb(145, 8, 8);
+    width: 200px;
+    align-self: center;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.success {
+    border: 2px solid rgb(8, 177, 31);
+    width: 200px;
+    align-self: center;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.button {
+    padding: 8px 12px;
+    background-color: #28c009;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.button:active{
+    background-color: #229b0a;
+}

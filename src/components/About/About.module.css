@@ -1,0 +1,56 @@
+.container {
+  background-color: rgb(15, 102, 69);
+  width: 60%;
+  align-self: center;
+  margin-top: calc(100vh + 90px - 50%);
+  padding: 12px;
+  border: 2px solid #fff;
+  height: 400px;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0;
+  grid-column-gap: 12px;
+  grid-row-gap: 0px;
+}
+
+.image {
+  width: 300px;
+  border-radius: 200px;
+  border: 4px solid #000;
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.imageTitle {
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  align-self: center;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.flexDiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  letter-spacing: 2px;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 30px;
+}
+
+.paragraph {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  letter-spacing: 1px ;
+  grid-area: 2 / 1 / 3 / 2;
+  width: 700px;
+}

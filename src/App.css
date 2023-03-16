@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
+   text-align: center;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   font-family: 'get_schwifty';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.characters {
+   max-width: 100vw;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .tittle {
+  color: rgb(16, 152, 156);
+  font-family: 'Get Schwifty';
+  font-size: 42px;
+  letter-spacing: 4px;
+  text-shadow: rgb(14, 187, 57) 4px -4px 2px;
+  margin: 0;
+  width: 600px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-self: center;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .tittle h1 {
+  width: 400px;
+ }
+ 
+ @font-face {
+   font-family: 'Get Schwifty';
+   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+ }
+ 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ @media only screen and (max-width : 900px) {
+   .App {
+      max-width: 100vw;
+      max-height: 100vh;
+      box-sizing: border-box;
+   }
+   .tittle {
+      width: 300px;
+      font-size: 26px;
+   }
+   }
