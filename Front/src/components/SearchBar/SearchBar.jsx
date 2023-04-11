@@ -11,6 +11,7 @@ export default function SearchBar(props) {
       <div className={style.container}>
          <input className={style.input} type='search' onChange={handleChange}/>
       <button className={style.button} onClick={() => {props.onSearch(id)}}>Agregar</button>
+      <button className={style.button} onClick={()=> {props.randomGenerate()}}>Random Generate</button>
       </div>
    );
 }

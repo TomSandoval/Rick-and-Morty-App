@@ -44,6 +44,12 @@ function logOut () {
       }
     });
   }
+
+  const randomGenerate = () => {
+    const randomNum = Math.floor(Math.random() * 827);
+
+    onSearch(randomNum)
+  }
   
   const onClose = (id) => {
     setCharacters(oldChars.filter((obj) => obj.id !== id));
@@ -52,7 +58,7 @@ function logOut () {
   const location = useLocation()
   return (
     <div className="App">
-        <Nav onSearch = {onSearch} location = {location} logOut= {logOut}></Nav>
+        <Nav onSearch = {onSearch} location = {location} logOut= {logOut} randomGenerate={randomGenerate}></Nav>
         <Routes>
           <Route path="/" element = {<Form login = {login}></Form>}/>
           <Route path="/home" element= {<Home characters = {oldChars} location= {location} onClose= {onClose}></Home>}></Route>

@@ -17,7 +17,7 @@ const Nav = (props) => {
           <Link to="/about " className={style.links}>
             About
           </Link>
-          <SearchBar onSearch={props.onSearch}></SearchBar>
+          <SearchBar onSearch={props.onSearch} randomGenerate={props.randomGenerate}></SearchBar>
           
         </nav>
       ) : null}

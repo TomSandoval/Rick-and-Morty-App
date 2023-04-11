@@ -31,6 +31,7 @@ function Form(props) {
               value={userData.username}
               onChange={handleInputChange}
               className={errors.username ? style.failed : style.success}
+              autoComplete="off"
             ></input>
             <span className={style.errors}>{errors.username}</span>
           </div>

@@ -29,14 +29,14 @@ export default function Favorites(props) {
     <div className={style.allContainer}>
       <div className={style.filterContainer}>
         <div className={style.inputContainer}>
-          <label>Orden</label>
+          <label>Orden por ID</label>
           <select onChange={handleOrder} className={style.input}>
             <option value="Ascendente">Ascendente</option>
             <option value="Descendente">Descendente</option>
           </select>
         </div>
         <div className={style.inputContainer}>
-          <label>Genero</label>
+          <label>Orden por genero</label>
           <select onChange={handleFilter} className={style.input}>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
